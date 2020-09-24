@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.game{
+    background-image: url("fxbnmnr.png");  /*7-8 pulls image for background*/
+    background-color: #cccccc;
+    width: 500px;
+    height: 200px;
+    border: 2px solid black;
+    margin: auto;
+}
+#character{
+
+    box-shadow: 45px 45px 0 0 rgba(255, 205, 210, 1), 35px 50px 0 0 rgba(255, 205, 210, 1), 40px 50px 0 0 rgba(255, 205, 210, 1), 45px 50px 0 0 rgba(255, 205, 210, 1), 50px 50px 0 0 rgba(255, 205, 210, 1), 55px 50px 0 0 rgba(255, 205, 210, 1), 30px 55px 0 0 rgba(255, 205, 210, 1), 35px 55px 0 0 rgba(0, 0, 0, 1), 40px 55px 0 0 rgba(255, 255, 255, 1), 45px 55px 0 0 rgba(255, 205, 210, 1), 50px 55px 0 0 rgba(0, 0, 0, 1), 55px 55px 0 0 rgba(255, 255, 255, 1), 60px 55px 0 0 rgba(255, 205, 210, 1), 30px 60px 0 0 rgba(255, 205, 210, 1), 35px 60px 0 0 rgba(0, 0, 0, 1), 40px 60px 0 0 rgba(0, 0, 0, 1), 45px 60px 0 0 rgba(255, 205, 210, 1), 50px 60px 0 0 rgba(0, 0, 0, 1), 55px 60px 0 0 rgba(0, 0, 0, 1), 60px 60px 0 0 rgba(255, 205, 210, 1), 25px 65px 0 0 rgba(255, 205, 210, 1), 30px 65px 0 0 rgba(255, 205, 210, 1), 35px 65px 0 0 rgba(255, 205, 210, 1), 40px 65px 0 0 rgba(255, 205, 210, 1), 45px 65px 0 0 rgba(255, 205, 210, 1), 50px 65px 0 0 rgba(255, 205, 210, 1), 55px 65px 0 0 rgba(255, 205, 210, 1), 60px 65px 0 0 rgba(255, 205, 210, 1), 65px 65px 0 0 rgba(255, 205, 210, 1), 25px 70px 0 0 rgba(255, 205, 210, 1), 30px 70px 0 0 rgba(255, 205, 210, 1), 35px 70px 0 0 rgba(255, 205, 210, 1), 40px 70px 0 0 rgba(255, 205, 210, 1), 45px 70px 0 0 rgba(255, 205, 210, 1), 50px 70px 0 0 rgba(0, 0, 0, 1), 55px 70px 0 0 rgba(255, 205, 210, 1), 60px 70px 0 0 rgba(255, 205, 210, 1), 65px 70px 0 0 rgba(255, 205, 210, 1), 25px 75px 0 0 rgba(255, 205, 210, 1), 30px 75px 0 0 rgba(255, 205, 210, 1), 35px 75px 0 0 rgba(255, 205, 210, 1), 40px 75px 0 0 rgba(255, 205, 210, 1), 45px 75px 0 0 rgba(255, 205, 210, 1), 50px 75px 0 0 rgba(255, 205, 210, 1), 55px 75px 0 0 rgba(255, 205, 210, 1), 60px 75px 0 0 rgba(255, 205, 210, 1), 65px 75px 0 0 rgba(255, 205, 210, 1), 30px 80px 0 0 rgba(255, 205, 210, 1), 35px 80px 0 0 rgba(255, 205, 210, 1), 40px 80px 0 0 rgba(255, 205, 210, 1), 45px 80px 0 0 rgba(255, 205, 210, 1), 50px 80px 0 0 rgba(255, 205, 210, 1), 55px 80px 0 0 rgba(255, 205, 210, 1), 60px 80px 0 0 rgba(255, 205, 210, 1);
+    height: 5px;
+    width: 5px;
+    position:relative;
+    top: 115px;    /*position*/
+}
+.animate{
+    animation: jump 0.3s linear;
+}
+@keyframes jump{
+    0%{top: 115px;}   /*jump starts at first position goes up then returns*/
+    30%{top: 50px;}
+    70%{top: 50px;}
+    100%{top: 115px;}
+}
+
+#block{
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 175px;
+    left: 500px;
+    animation: block 3s infinite linear;
+}
+@keyframes block{
+    0%{left: 500px}
+    100%{left: -20px}
+}
+p{
+    text-align: center;
+}
